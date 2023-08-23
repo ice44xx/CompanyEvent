@@ -155,6 +155,26 @@
   margin-bottom: 100px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container .form {
+  padding: 10px;
+  max-width: 600px;
+  width: 100%;
+}
+.container .form .form-control {
+  margin: 10px 0;
+}
+.container .form .btn {
+  width: 120px;
+  margin: 10px 0;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;

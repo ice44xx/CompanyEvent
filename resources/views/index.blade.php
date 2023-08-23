@@ -14,13 +14,12 @@
             <div class="cards-container">
                 @foreach ($events as $event)
                     <div class="card">
-                        <img src="/img/events/anime.webp" alt={{$event->title}}>
+                        <img src="{{'storage/' . $event->image}}" alt="{{ $event->title }}">
                         <div class="overlay">
                             <p>{{$event->title}}</p>
-                            <p>02/02/2023</p>
+                            <p>{{$event->city}}</p>
                         </div>
                     </div>
-                    
                 @endforeach
             </div>
         </div>
@@ -28,26 +27,25 @@
             <h1 class="title">Eventos em destaques</h1>
             <div class="card-container">
                 <div class="card">
-                    <img src="/img/events/anime.webp" alt={{$event->title}}>
+                    <img src="{{'storage/' .$event->image}}" alt={{$event->title}}>
                 </div>
                 <div class="overlay">
                     <div class="info-container">
-                        <p>title</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>{{$event->title}}</p>
+                        <p>{{$event->city}}</p>
                     </div>
                 </div>
             </div>
-            
         </div>
         <div class="parties-container">
             <h2>Festas e Shows</h2>
             <div class="cards-container">
-                @foreach ($events as $event)
+                @foreach ($parties  as $party)
                     <div class="card">
-                        <img src="/img/events/anime.webp" alt={{$event->title}}>
+                        <img src="{{'storage/' . $party->image}}" alt={{$party->title}}>
                         <div class="overlay">
-                            <p>{{$event->title}}</p>
-                            <p>02/02/2023</p>
+                            <p>{{$party->title}}</p>
+                            <p>{{$party->city}}</p>
                         </div>
                     </div>
                 @endforeach
@@ -56,12 +54,12 @@
         <div class="tours-container">
             <h2>Passeios e Tours</h2>
             <div class="cards-container">
-                @foreach ($events as $event)
+                @foreach ($tours  as $tour)
                     <div class="card">
-                        <img src="/img/events/anime.webp" alt={{$event->title}}>
+                        <img src="{{'storage/' . $tour->image}}" alt="{{ $tour->title }}">
                         <div class="overlay">
-                            <p>{{$event->title}}</p>
-                            <p>02/02/2023</p>
+                            <p>{{$tour->title}}</p>
+                            <p>{{$tour->city}}</p>
                         </div>
                     </div>
                 @endforeach

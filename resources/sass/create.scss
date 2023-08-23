@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .form {
+        padding: 10px;
+        max-width: 600px;
+        width: 100%;
+        .form-control {
+            margin: 10px 0;
+        }
+        .btn {
+            width: 120px;
+            margin: 10px 0;
+        }
+    }
+}
