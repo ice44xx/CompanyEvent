@@ -16,8 +16,8 @@
                     <div class="card">
                         <img src="{{'storage/' . $event->image}}" alt="{{ $event->title }}">
                         <div class="overlay">
-                            <p>{{$event->title}}</p>
-                            <p>{{$event->city}}</p>
+                            <p class="title_event">{{$event->title}}</p>
+                            <p class="subtitle_event">{{$event->city}}</p>
                         </div>
                     </div>
                 @endforeach
@@ -31,8 +31,8 @@
                 </div>
                 <div class="overlay">
                     <div class="info-container">
-                        <p>{{$event->title}}</p>
-                        <p>{{$event->city}}</p>
+                        <p class="title_event">{{$event->title}}</p>
+                        <p class="subtitle_event">{{$event->city}}</p>
                     </div>
                 </div>
             </div>
@@ -44,8 +44,8 @@
                     <div class="card">
                         <img src="{{'storage/' . $party->image}}" alt={{$party->title}}>
                         <div class="overlay">
-                            <p>{{$party->title}}</p>
-                            <p>{{$party->city}}</p>
+                            <p class="title_event">{{$party->title}}</p>
+                            <p class="subtitle_event">{{$party->city}}</p>
                         </div>
                     </div>
                 @endforeach
@@ -58,8 +58,8 @@
                     <div class="card">
                         <img src="{{'storage/' . $tour->image}}" alt="{{ $tour->title }}">
                         <div class="overlay">
-                            <p>{{$tour->title}}</p>
-                            <p>{{$tour->city}}</p>
+                            <p class="title_event">{{$tour->title}}</p>
+                            <p class="subtitle_event">{{$tour->city}}</p>
                         </div>
                     </div>
                 @endforeach

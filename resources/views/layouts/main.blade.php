@@ -10,12 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-</head>
+    @vite(['resources/css/app.css', 'resources/sass/app.scss', 'resources/js/app.js'])
+  </head>
 <body>
     <header>
         <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Company Events</a>
+              <a class="navbar-brand" href="/">Company Events</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -32,10 +33,10 @@
                       <a class="nav-link" href="/events/create">Criar Evento</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="/events/create">Entrar</a>
+                      <a class="nav-link" href="">Entrar</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="/events/create">Registrar</a>
+                      <a class="nav-link" href="">Registrar</a>
                     </li>
                   </ul>
                 </div>
